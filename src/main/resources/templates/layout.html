@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th=“http://www.thymeleaf.org”>
-<head th:fragment=“site-head”>
+<head th:fragment=“blog-head”>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
             crossorigin="anonymous"></script>
-    <link rel=“stylesheet” th:href=“@{/css/styles.css}” />
+    <link rel="stylesheet" href="../public/css/styles.css" th:href="@{/css/styles.css}" />
+    <title>Spring Blog</title>
 </head>
 <body>
-<header class="head-logo" th:fragment="site-header">
-    <a href="index.html" th:href="@{/}"><img class="logo" src="../public/img/site-logo.png" th:src="@{/img/site-logo.png}" /></a>
+<header class="head-logo" th:fragment="blog-header">
+    <a href="index.html" th:href="@{/}"><img class="logo" src="../public/img/Wilton-Blog-Logo.png" th:src="@{/img/Wilton-Blog-Logo.png}" /></a>
     <a href="index.html" th:href="@{/}">Home</a>
     <a href="index.html" th:href="@{/}">Login</a>
     <a href="index.html" th:href="@{/}">Register</a>
@@ -26,6 +27,6 @@
 </header>
 <h1>Welcome</h1>
 <p>Welcome to my blog</p>
-<footer th:fragment="site-footer"></footer>
+<footer th:fragment="blog-footer"></footer>
 </body>
 </html>
